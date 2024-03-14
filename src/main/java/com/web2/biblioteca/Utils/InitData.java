@@ -90,14 +90,20 @@ public class InitData {
 
         if (emprestimoService.getAll().isEmpty() ) {
             // EMPRÉSTIMOS;;;;
-//            EmprestimoEntity emprestimoEntity1 = new EmprestimoEntity();
-//            emprestimoEntity1.setUsuario();
-//            emprestimoEntity1.setLivro();
-//            emprestimoEntity1.setDataEmprestimo();
-//            emprestimoEntity1.setPrazoDevolucao();
-//            emprestimoEntity1.setDataDevolucao();
-//
+            EmprestimoEntity emprestimoEntity1 = new EmprestimoEntity();
+            emprestimoEntity1.setUsuario(usuarioRepository.findById(1L).get());
+            emprestimoEntity1.setLivro(livroRepository.findById(1L).get());
+            emprestimoRepository.save(emprestimoEntity1);
 
+            EmprestimoEntity emprestimoEntity2 = new EmprestimoEntity();
+            emprestimoEntity2.setUsuario(usuarioRepository.findById(1L).get());
+            emprestimoEntity2.setLivro(livroRepository.findById(2L).get());
+            emprestimoRepository.save(emprestimoEntity2);
+
+            EmprestimoEntity emprestimoEntity3 = new EmprestimoEntity();
+            emprestimoEntity3.setUsuario(usuarioRepository.findById(2L).get());
+            emprestimoEntity3.setLivro(livroRepository.findById(2L).get());
+            emprestimoRepository.save(emprestimoEntity3);
 
         }
 
