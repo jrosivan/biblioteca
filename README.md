@@ -8,6 +8,7 @@ Trabalho Final ADA: Ser + Tech Programa 50+
 * Jefferson Domareski
 * Otair Caetano
 * Helder Gonçalves
+* Marcelo Rocha
 * Jorge Rosivan
 ___
 
